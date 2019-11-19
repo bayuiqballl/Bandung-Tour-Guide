@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="rootLogin" prefHeight="503.0" prefWidth="854.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginActivityController">
+   <children>
+      <ImageView fx:id="imgLoginBanner" fitHeight="503.0" fitWidth="513.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../drawable/LoginBanner.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgStack" fitHeight="175.0" fitWidth="401.0" layoutX="26.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../drawable/StackBanner.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="512.0" layoutY="23.0" prefHeight="387.0" prefWidth="343.0" AnchorPane.bottomAnchor="93.0" AnchorPane.topAnchor="23.0">
+         <children>
+            <ImageView fx:id="imgCover" fitHeight="503.0" fitWidth="359.0" layoutX="1.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/BackgroundLogin.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtUsername" layoutX="34.0" layoutY="183.0" prefHeight="34.0" prefWidth="275.0" promptText="Username" />
+            <PasswordField fx:id="txtPassword" layoutX="34.0" layoutY="241.0" prefHeight="34.0" prefWidth="275.0" promptText="Password" stylesheets="@../styles/fullpackstyling.css" />
+            <ImageView fx:id="imgLogo" fitHeight="57.0" fitWidth="179.0" layoutX="87.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/Logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgSignIn" fitHeight="17.0" fitWidth="169.0" layoutX="87.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/SignInLabel.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnSignIn" layoutX="180.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="34.0" prefWidth="129.0" style="-fx-background-color: #0075ca;" text="Sign In" textFill="WHITE" />
+            <Button fx:id="btnRegister" layoutX="34.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#btnRegisterPressed" prefHeight="34.0" prefWidth="129.0" stylesheets="@../styles/fullpackstyling.css" text="Register" />
+         </children>
+      </Pane>
+      <Label fx:id="infoLogin" layoutX="529.0" layoutY="437.0" text="*Register if you don't have an account." />
+      <Label fx:id="infoCopyright" layoutX="529.0" layoutY="465.0" text="Copyright © 2019 Kelompok 1. All rights reserved." />
+   </children>
+</AnchorPane>

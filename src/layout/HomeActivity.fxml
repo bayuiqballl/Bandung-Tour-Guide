@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="rootHome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1054.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeActivityController">
+   <top>
+      <HBox fx:id="ActionBar" prefHeight="55.0" prefWidth="600.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXHamburger fx:id="hamburger" prefHeight="55.0" prefWidth="100.0" />
+            <Label fx:id="space1" prefHeight="55.0" prefWidth="30.0" />
+            <ImageView fx:id="imgActionBar" fitHeight="55.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/ActionBar.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="space2" prefHeight="55.0" prefWidth="30.0" />
+            <JFXButton fx:id="btnActionBar1" prefHeight="55.0" prefWidth="154.0" text="Destinasi Wisata">
+               <graphic>
+                  <ImageView fx:id="icon1" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/Compressed/streetview-black-24dp/2x/baseline_streetview_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnActionBar2" prefHeight="66.0" prefWidth="121.0" text="Wisata Halal">
+               <graphic>
+                  <ImageView fx:id="icon2" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/Compressed/museum-black-24dp/2x/baseline_museum_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnActionBar3" prefHeight="66.0" prefWidth="121.0" text="Kuliner">
+               <graphic>
+                  <ImageView fx:id="icon3" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/Compressed/restaurant_menu-black-24dp/2x/baseline_restaurant_menu_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnActionBar4" prefHeight="66.0" prefWidth="121.0" text="Hotel">
+               <graphic>
+                  <ImageView fx:id="icon4" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/Compressed/hotel-black-24dp/2x/baseline_hotel_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnActionBar5" prefHeight="66.0" prefWidth="121.0" text="Budaya">
+               <graphic>
+                  <ImageView fx:id="icon5" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/Compressed/trip_origin-black-24dp/2x/baseline_trip_origin_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <ScrollPane fx:id="scrlPaneHome" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <BorderPane fx:id="BrdrPaneHome" prefHeight="200.0" prefWidth="1053.0">
+               <top>
+                  <Pane fx:id="HeaderHome" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="imgHomeHeader" layoutX="309.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../drawable/HomeHeader.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="imgStackHeader" fitHeight="170.0" fitWidth="521.0" layoutX="62.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../drawable/StackHomeHeader.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </top>
+               <center>
+                  <Pane fx:id="HomePane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
