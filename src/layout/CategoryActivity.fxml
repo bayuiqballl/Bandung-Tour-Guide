@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="rootCategory" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1254.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CategoryActivityController">
+   <left>
+      <VBox fx:id="DrawerCategory" prefHeight="703.0" prefWidth="51.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="iconCategory" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/Icon.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnHomeCategory" onMouseClicked="#Home" prefHeight="80.0" prefWidth="80.0" text=" " textOverrun="CLIP">
+               <graphic>
+                  <ImageView fx:id="imgHomeCategory" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_dashboard_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnCategoryCategory" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgCategoryCategory" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_category_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnAboutCategory" onMouseClicked="#About" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgAboutCategory" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_info_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label fx:id="spaceCategory" prefHeight="303.0" prefWidth="80.0" text=" " />
+            <JFXButton fx:id="btnLogoutCategory" onMouseClicked="#Logout" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgLogoutCategory" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_close_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="AnchorPaneCategory" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btnWisataReligi" layoutX="410.0" layoutY="59.0" onMouseClicked="#WisataReligiLayout" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgWisataReligi" fitHeight="577.0" fitWidth="331.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/CardView-WisataReligi.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnDestinasiWisata" layoutX="55.0" layoutY="59.0" onMouseClicked="#DestinasiWisataLayout" prefHeight="585.0" prefWidth="343.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgDestinasiWisata" fitHeight="577.0" fitWidth="331.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/CardView-DestinasiWisata.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnLokasiHotel" layoutX="765.0" layoutY="59.0" onMouseClicked="#LokasiHotelLayout" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgLokasiHotel" fitHeight="577.0" fitWidth="331.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/CardView-LokasiHotel.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnWisataKuliner" layoutX="410.0" layoutY="359.0" onMouseClicked="#WisataKulinerLayout" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgWisataKuliner" fitHeight="577.0" fitWidth="331.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/CardView-WisataKuliner.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnWisataBudaya" layoutX="765.0" layoutY="359.0" onMouseClicked="#WisataBudayaLayout" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgWisataBudaya" fitHeight="577.0" fitWidth="331.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/Cardview-WisataBudaya.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

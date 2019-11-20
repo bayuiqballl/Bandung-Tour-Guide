@@ -18,19 +18,18 @@ import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
-import javafx.scene.layout.Pane;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.StackPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
-import javafx.util.Duration;
-import main.BandungTourGuide;
-
+import javafx.stage.Stage;
 /**
  * FXML Controller class
  *
@@ -39,34 +38,31 @@ import main.BandungTourGuide;
 public class HomeActivityController implements Initializable {
     
     @FXML
-    private JFXDrawer drawer;
-
-    @FXML
-    private JFXHamburger hamburger;
+    private ImageView imgLogoutHome;
     
     @FXML
-    private JFXButton btnActionBar1;
+    private JFXButton btnLogoutHome;
     
     @FXML
-    private JFXButton btnActionBar2;
+    private ImageView imgHomeHome;
     
     @FXML
-    private JFXButton btnActionBar3;
+    private JFXButton btnHomeHome;
     
     @FXML
-    private JFXButton btnActionBar4;
+    private ImageView imgAboutHome;
     
     @FXML
-    private JFXButton btnActionBar5;
+    private JFXButton btnAbouthome;
     
     @FXML
-    private BorderPane BrdrPaneHome;
+    private ImageView imgCategoryHome;
     
     @FXML
-    private Pane HeaderHome;
+    private JFXButton btnCategoryHome;
     
     @FXML
-    private Pane HomePane;
+    private ImageView iconHome;
     
     @FXML
     private ImageView imgHomeHeader;
@@ -75,62 +71,142 @@ public class HomeActivityController implements Initializable {
     private ImageView imgStackHeader;
     
     @FXML
-    private ScrollPane scrlPaneHome;
+    private VBox DrawerHome;
     
     @FXML
-    private HBox ActionBar;
-    
-    @FXML
-    private Label space1;
-    
-    @FXML
-    private Label space2;
-    
-    @FXML
-    private ImageView icon1;
-    
-    @FXML
-    private ImageView icon2;
-    
-    @FXML
-    private ImageView icon3;
-    
-    @FXML
-    private ImageView icon4;
-    
-    @FXML
-    private ImageView icon5;
+    private Label spaceHome;
     
     @FXML
     private BorderPane rootHome;
+    
+    @FXML
+    private ScrollPane ScrollPaneHome;
+    
+    @FXML
+    private ImageView imgRingkasan;
+    
+    @FXML
+    private ImageView imgInfoGeo;
+    
+    @FXML
+    private ImageView imgLogoBandung;
+    
+    @FXML
+    private ImageView geo1;
+    
+    @FXML
+    private ImageView geo2;
+    
+    @FXML
+    private ImageView geo3;
+    
+    @FXML
+    private ImageView imgKumpulanFoto;
+    
+    @FXML
+    private ImageView imgFoto;
+    
+    @FXML
+    private AnchorPane AnchorPaneHome;
+    
+    @FXML
+    private AnchorPane InfoPaneHome;
+    
+    @FXML
+    private Pane CapsuleInfoPaneHome;
+    
+    @FXML
+    private Pane RingkasanPane;
+    
+    @FXML
+    private Label LabelRingkasan;
+    
+    @FXML
+    private Pane InfoGeoPane;
+    
+    @FXML
+    private Label labelsemboyan;
+    
+    @FXML
+    private Label labelgeo1;
+    
+    @FXML
+    private Label labelgeo2;
+    
+    @FXML
+    private Label labelgeo3;
+    
+    @FXML
+    private Pane FotoPane;
+    
+    
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/layout/NavigationDrawer.fxml"));
-            VBox box = loader.load();
-            NavigationDrawerController controller = loader.getController();
-            drawer.setSidePane(box);
-        } catch (IOException ex) {
-            Logger.getLogger(HomeActivityController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
-        HamburgerBackArrowBasicTransition transition = new HamburgerBackArrowBasicTransition(hamburger);
-        transition.setRate(-1);
-        hamburger.addEventHandler(MouseEvent.MOUSE_PRESSED, (e) -> {
-            transition.setRate(transition.getRate() * -1);
-            transition.play();
-
-            if (drawer.isShown()) {
-                drawer.close();
-            } else {
-                drawer.open();
-            }
-        });
+//        initHome();
+//        initDrawer();
     }
+    
+    public void Category(MouseEvent mouseEvent) throws IOException{
+        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/CategoryActivity.fxml")));
+        Node node = (Node) mouseEvent.getSource();
+        Stage stage = (Stage) node.getScene().getWindow();
+        stage.setScene(new Scene(rootRegis));
+        
+        stage.centerOnScreen();  
+    }
+    
+    public void About(MouseEvent mouseEvent) throws IOException{
+        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/AboutActivity.fxml")));
+        Node node = (Node) mouseEvent.getSource();
+        Stage stage = (Stage) node.getScene().getWindow();
+        stage.setScene(new Scene(rootRegis));
+        
+        stage.centerOnScreen();  
+    }
+    
+    public void Logout(MouseEvent mouseEvent) throws IOException{
+        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/LoginActivity.fxml")));
+        Node node = (Node) mouseEvent.getSource();
+        Stage stage = (Stage) node.getScene().getWindow();
+        stage.setScene(new Scene(rootRegis));
+        
+        stage.centerOnScreen(); 
+    }
+    
+//    private void initHome(){
+//        try {
+//            AnchorPane Home = FXMLLoader.load(getClass().getResource("/layout/HomeLayout.fxml"));
+//            HomePane.
+//        } catch (IOException ex) {
+//            Logger.getLogger(HomeActivityController.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
+//    
+//    private void initDrawer(){
+//        try {
+//            VBox rootDrawer = FXMLLoader.load(getClass().getResource("/layout/NavigationDrawer.fxml"));
+//            drawer.setSidePane(rootDrawer);
+//        } catch (IOException ex) {
+//            Logger.getLogger(HomeActivityController.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//
+//        HamburgerBackArrowBasicTransition transition = new HamburgerBackArrowBasicTransition(hamburger);
+//        transition.setRate(-1);
+//        hamburger.addEventHandler(MouseEvent.MOUSE_PRESSED, (e) -> {
+//            transition.setRate(transition.getRate() * -1);
+//            transition.play();
+//
+//            if (drawer.isOpened()) {
+//                drawer.close();
+//            } else {
+//                drawer.open();
+//            }
+//        });
+//    }
 
         
     

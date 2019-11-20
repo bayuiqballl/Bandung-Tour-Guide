@@ -1,99 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.image.*?>
-<?import com.jfoenix.controls.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane fx:id="rootHome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1054.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeActivityController">
-   <top>
-      <HBox fx:id="ActionBar" prefHeight="55.0" prefWidth="600.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+<BorderPane fx:id="rootHome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1254.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeActivityController">
+   <left>
+      <VBox fx:id="DrawerHome" prefHeight="703.0" prefWidth="51.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
          <children>
-            <JFXHamburger fx:id="hamburger" prefHeight="55.0" prefWidth="100.0" />
-            <Label fx:id="space1" prefHeight="55.0" prefWidth="30.0" />
-            <ImageView fx:id="imgActionBar" fitHeight="55.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="iconHome" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../drawable/ActionBar.png" />
+                  <Image url="@../drawable/Icon.png" />
                </image>
             </ImageView>
-            <Label fx:id="space2" prefHeight="55.0" prefWidth="30.0" />
-            <JFXButton fx:id="btnActionBar1" prefHeight="55.0" prefWidth="154.0" text="Destinasi Wisata">
+            <JFXButton fx:id="btnHomeHome" prefHeight="80.0" prefWidth="80.0" text=" " textOverrun="CLIP">
                <graphic>
-                  <ImageView fx:id="icon1" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imgHomeHome" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../Downloads/Compressed/streetview-black-24dp/2x/baseline_streetview_black_24dp.png" />
+                        <Image url="@../drawable/baseline_dashboard_black_24dp.png" />
                      </image>
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="btnActionBar2" prefHeight="66.0" prefWidth="121.0" text="Wisata Halal">
+            <JFXButton fx:id="btnCategoryHome" onMouseClicked="#Category" prefHeight="80.0" prefWidth="80.0" text=" ">
                <graphic>
-                  <ImageView fx:id="icon2" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imgCategoryHome" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../Downloads/Compressed/museum-black-24dp/2x/baseline_museum_black_24dp.png" />
+                        <Image url="@../drawable/baseline_category_black_24dp.png" />
                      </image>
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="btnActionBar3" prefHeight="66.0" prefWidth="121.0" text="Kuliner">
+            <JFXButton fx:id="btnAboutHome" onContextMenuRequested="#About" prefHeight="80.0" prefWidth="80.0" text=" ">
                <graphic>
-                  <ImageView fx:id="icon3" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imgAboutHome" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../Downloads/Compressed/restaurant_menu-black-24dp/2x/baseline_restaurant_menu_black_24dp.png" />
+                        <Image url="@../drawable/baseline_info_black_24dp.png" />
                      </image>
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="btnActionBar4" prefHeight="66.0" prefWidth="121.0" text="Hotel">
+            <Label fx:id="spaceHome" prefHeight="303.0" prefWidth="80.0" text=" " />
+            <JFXButton fx:id="btnLogoutHome" onMouseClicked="#Logout" prefHeight="80.0" prefWidth="80.0" text=" ">
                <graphic>
-                  <ImageView fx:id="icon4" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imgLogoutHome" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../Downloads/Compressed/hotel-black-24dp/2x/baseline_hotel_black_24dp.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </JFXButton>
-            <JFXButton fx:id="btnActionBar5" prefHeight="66.0" prefWidth="121.0" text="Budaya">
-               <graphic>
-                  <ImageView fx:id="icon5" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../Downloads/Compressed/trip_origin-black-24dp/2x/baseline_trip_origin_black_24dp.png" />
+                        <Image url="@../drawable/baseline_close_black_24dp.png" />
                      </image>
                   </ImageView>
                </graphic>
             </JFXButton>
          </children>
-      </HBox>
-   </top>
+      </VBox>
+   </left>
    <center>
-      <ScrollPane fx:id="scrlPaneHome" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-         <content>
-            <BorderPane fx:id="BrdrPaneHome" prefHeight="200.0" prefWidth="1053.0">
-               <top>
-                  <Pane fx:id="HeaderHome" BorderPane.alignment="CENTER">
+      <ScrollPane fx:id="ScrollPaneHome" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane fx:id="AnchorPaneHome" prefHeight="1503.0" prefWidth="1054.0" style="-fx-background-color: #fff;">
+			<children>
+      <ImageView fx:id="imgStackHeader" layoutX="91.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../drawable/StackHomeHeader.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgHomeHeader" layoutX="419.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../drawable/HomeHeader.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="InfoPaneHome" layoutY="501.0" prefHeight="1437.0" prefWidth="1163.0" style="-fx-background-color: #f2f2f2;">
+         <children>
+            <Pane fx:id="CapsuleInfoPaneHome" layoutX="14.0" layoutY="14.0" prefHeight="1310.0" prefWidth="1140.0">
+               <children>
+                  <Pane fx:id="RingkasanPane" layoutX="31.0" layoutY="14.0">
                      <children>
-                        <ImageView fx:id="imgHomeHeader" layoutX="309.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="imgRingkasan" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../drawable/HomeHeader.png" />
+                              <Image url="@../drawable/HeaderFontHome1.png" />
                            </image>
                         </ImageView>
-                        <ImageView fx:id="imgStackHeader" fitHeight="170.0" fitWidth="521.0" layoutX="62.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+                                    <Label fx:id="LabelRingkasan" layoutY="49.0" prefHeight="287.0" prefWidth="624.0" text="Bandung (/ ˈbɑːndʊŋ /) adalah ibu kota provinsi Jawa Barat di Indonesia. Berdasarkan sensus 2015, ini adalah kota terpadat keempat di Indonesia setelah Jakarta, Surabaya, dan Bekasi dengan lebih dari 2,5 juta penduduk. Bandung Raya adalah kota metropolitan terbesar kedua di negara ini dengan lebih dari 8,5 juta penduduk. [2] Terletak 768 meter (2.520 kaki) di atas permukaan laut, sekitar 140 kilometer (87 mil) tenggara Jakarta, Bandung memiliki suhu yang lebih sejuk sepanjang tahun daripada kebanyakan kota di Indonesia. Kota ini terletak di lembah sungai yang dikelilingi oleh gunung berapi yang menyediakan sistem pertahanan alami, yang merupakan alasan utama rencana pemerintah Hindia Belanda untuk memindahkan ibukota dari Batavia (Jakarta modern) ke Bandung." wrapText="true">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="InfoGeoPane" layoutX="780.0" layoutY="14.0" prefHeight="799.0" prefWidth="330.0">
+                     <children>
+                        <ImageView fx:id="imgLogoBandung" fitHeight="150.0" fitWidth="200.0" layoutX="97.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../drawable/StackHomeHeader.png" />
+                              <Image url="@../drawable/BandungLogo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="geo1" fitHeight="150.0" fitWidth="200.0" layoutX="84.0" layoutY="531.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../drawable/250px-Indonesia_Java_location_map.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="geo2" fitHeight="150.0" fitWidth="200.0" layoutX="84.0" layoutY="679.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../drawable/250px-Indonesia_location_map.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="geo3" fitHeight="150.0" fitWidth="200.0" layoutX="83.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../drawable/250px-Locator_kota_bandung.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="labelsemboyan" alignment="CENTER" layoutX="72.0" layoutY="240.0" prefHeight="76.0" prefWidth="223.0" text="Semboyan: Bermartabat (Bersih, Makmur, Taat, dan Bersahabat)Gemah Ripah Wibawa Mukti (Tenteram, Makmur, Berlimpah, Menyenangkan)" textAlignment="CENTER" wrapText="true" />
+                        <Label fx:id="labelgeo1" alignment="CENTER" layoutX="89.0" layoutY="487.0" text="Lokasi Kota Bandung di Pulau Jawa" textAlignment="CENTER" wrapText="true" />
+                        <Label fx:id="labelgeo2" alignment="CENTER" layoutX="76.0" layoutY="635.0" text="Lokasi kota Bandung di peta pulau Jawa" textAlignment="CENTER" wrapText="true" />
+                        <Label fx:id="labelgeo3" alignment="CENTER" layoutX="89.0" layoutY="756.0" text="Lokasi Kota Bandung di Pulau Jawa" textAlignment="CENTER" wrapText="true" />
+                        <ImageView fx:id="imgInfoGeo" fitHeight="49.0" fitWidth="174.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../drawable/HeaderFontHome3.png" />
                            </image>
                         </ImageView>
                      </children>
                   </Pane>
-               </top>
-               <center>
-                  <Pane fx:id="HomePane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
-               </center>
-            </BorderPane>
-         </content>
+                  <Pane fx:id="FotoPane" layoutX="31.0" layoutY="362.0" prefHeight="925.0" prefWidth="677.0">
+                     <children>
+                        <ImageView fx:id="imgFoto" fitHeight="76.0" fitWidth="301.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../drawable/HeaderFontHome2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="imgKumpulanFoto" fitHeight="817.0" fitWidth="728.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../drawable/Montage_of_Bandung.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+		  
+		  
+		  </AnchorPane>
+        </content>
       </ScrollPane>
    </center>
 </BorderPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1254.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AboutActivityController">
+   <left>
+      <VBox prefHeight="703.0" prefWidth="51.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/Icon.png" />
+               </image>
+            </ImageView>
+            <JFXButton onMouseClicked="#Home" prefHeight="80.0" prefWidth="80.0" text=" " textOverrun="CLIP">
+               <graphic>
+                  <ImageView fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_dashboard_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton onMouseClicked="#Category" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_category_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_info_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label prefHeight="303.0" prefWidth="80.0" text=" " />
+            <JFXButton onMouseClicked="#Logout" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_close_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
