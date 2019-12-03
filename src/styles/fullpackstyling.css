@@ -32,6 +32,32 @@
 -fx-text-fill: #FFF;
 }
 
+.jfx-spinner .percentage
+{
+    -fx-stroke: white;
+}
+
+.jfx-tab-pane .headers-region {
+    -fx-background-color: #0067b6;
+}
+.jfx-tab-pane .tab-header-background {
+    -fx-background-color: #0067b6;
+}
+
+.jfx-tab-pane .tab-selected-line{
+    -fx-border-color: #fff;
+}
+
+.jfx-tab-pane .tab .tab-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #fff;
+    -fx-font-size: 16;
+}
+
+.tab{
+    -fx-pref-height: 50;
+}
+
 .table-view .column-header,
 .table-view .column-header-background .filler {
     -fx-cell-size : 20;

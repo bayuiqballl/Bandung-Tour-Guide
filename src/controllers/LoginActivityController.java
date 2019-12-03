@@ -23,10 +23,12 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
@@ -67,6 +69,9 @@ public class LoginActivityController implements Initializable {
     @FXML
     private AnchorPane rootLogin;
     
+    @FXML
+    private Label status;
+    
     Connection conn = null;
     PreparedStatement preparedStatement = null;
     ResultSet res;
@@ -102,9 +107,11 @@ public class LoginActivityController implements Initializable {
 //            loadSplashScreen();
 //        }
         if (conn == null) {
-            System.out.println("error Database");
+            status.setTextFill(Color.web("#FF2B2B"));
+            status.setText("Status : Tidak Terhubung dengan Database!");
         }else {
-            System.out.println("Go");
+            status.setTextFill(Color.web("#00A022"));
+            status.setText("Status : Terhubung dengan Database.");
         }
        
     }
@@ -163,7 +170,7 @@ public class LoginActivityController implements Initializable {
             String username = txtUsername.getText();
             String password = txtPassword.getText();
         if(username.isEmpty() || password.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "username dan password tidak boleh kosong!");
+            JOptionPane.showMessageDialog(null, "Username dan Password tidak boleh Kosong!");
             status = "Error";
         } else {
             String sql = "SELECT * from user  WHERE username = '"+username+"' AND password = '"+password+"' ";
@@ -174,11 +181,11 @@ public class LoginActivityController implements Initializable {
 //                preparedStatement.setString(2, password);
                 res = stm.executeQuery(sql);
                  if(!res.next()){
-                    JOptionPane.showMessageDialog(null, "username atau password salah");
+                    JOptionPane.showMessageDialog(null, "Username atau Password Salah");
                        status = "Error"; 
                 }else{
                      if(username.equals(res.getString("username")) && password.equals(res.getString("password"))){
-                        JOptionPane.showMessageDialog(null, "berhasil login");   
+                        JOptionPane.showMessageDialog(null, "Berhasil Login!");   
                     }
                     
                 }

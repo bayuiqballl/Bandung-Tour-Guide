@@ -42,6 +42,7 @@
                </image>
             </ImageView>
             <Button fx:id="btnRegister" layoutX="180.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#handleButtonRegister" prefHeight="34.0" prefWidth="129.0" style="-fx-background-color: #0075ca;" text="Register" textFill="WHITE" />
+            <Label layoutX="34.0" layoutY="324.0" onMouseClicked="#Back" text="Already have an account?" textFill="#2084c7" />
          </children>
       </Pane>
       <Label fx:id="infoCopyright" layoutX="529.0" layoutY="465.0" text="Copyright © 2019 Kelompok 1. All rights reserved." />

@@ -62,31 +62,35 @@ public class DestinasiActivityController implements Initializable {
         // TODO
     }    
     
+    //=====================================NAVIGATION DRAWER=====================================
+
+    //Perintah menuju Home
     public void Home(MouseEvent mouseEvent) throws IOException{
         Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/HomeActivity.fxml")));
         Node node = (Node) mouseEvent.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(rootRegis));
-        
+        stage.setTitle("Home - Bandung Tour Guide");
         stage.centerOnScreen();  
     }
     
+    //Perintah menuju Category
     public void Category(MouseEvent mouseEvent) throws IOException{
         Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/CategoryActivity.fxml")));
         Node node = (Node) mouseEvent.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(rootRegis));
-        
+        stage.setTitle("Category - Bandung Tour Guide");
         stage.centerOnScreen();  
     }
     
+    //Perintah menuju Logout
     public void Logout(MouseEvent mouseEvent) throws IOException{
         Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/LoginActivity.fxml")));
         Node node = (Node) mouseEvent.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(rootRegis));
-        
+        stage.setTitle("Sign In - Bandung Tour Guide");
         stage.centerOnScreen(); 
-    }
-    
+    }    
 }

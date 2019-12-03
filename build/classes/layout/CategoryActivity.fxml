@@ -9,44 +9,62 @@
 
 <BorderPane fx:id="rootCategory" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1254.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CategoryActivityController">
    <left>
-      <VBox fx:id="DrawerCategory" prefHeight="703.0" prefWidth="51.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+      <VBox fx:id="Drawer" prefHeight="703.0" prefWidth="51.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fx:id="iconCategory" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="icon" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../drawable/Icon.png" />
                </image>
             </ImageView>
-            <JFXButton fx:id="btnHomeCategory" onMouseClicked="#Home" prefHeight="80.0" prefWidth="80.0" text=" " textOverrun="CLIP">
+            <JFXButton fx:id="btnHome" onMouseClicked="#Home" prefHeight="80.0" prefWidth="80.0" text=" " textOverrun="CLIP">
                <graphic>
-                  <ImageView fx:id="imgHomeCategory" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imgHome" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../drawable/baseline_dashboard_black_24dp.png" />
                      </image>
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="btnCategoryCategory" prefHeight="80.0" prefWidth="80.0" text=" ">
+            <JFXButton fx:id="btnCategory" prefHeight="80.0" prefWidth="80.0" text=" ">
                <graphic>
-                  <ImageView fx:id="imgCategoryCategory" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imgCategory" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../drawable/baseline_category_black_24dp.png" />
                      </image>
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="btnAboutCategory" onMouseClicked="#About" prefHeight="80.0" prefWidth="80.0" text=" ">
+            <JFXButton fx:id="btnprice" onMouseClicked="#Price" prefHeight="80.0" prefWidth="80.0" text=" ">
                <graphic>
-                  <ImageView fx:id="imgAboutCategory" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imgprice" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../drawable/baseline_info_black_24dp.png" />
+                        <Image url="@../drawable/baseline_price_black_24dp.png" />
                      </image>
                   </ImageView>
                </graphic>
             </JFXButton>
-            <Label fx:id="spaceCategory" prefHeight="303.0" prefWidth="80.0" text=" " />
-            <JFXButton fx:id="btnLogoutCategory" onMouseClicked="#Logout" prefHeight="80.0" prefWidth="80.0" text=" ">
+            <JFXButton fx:id="btnreservation" onMouseClicked="#Order" prefHeight="80.0" prefWidth="80.0" text=" ">
                <graphic>
-                  <ImageView fx:id="imgLogoutCategory" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imgreservation" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_reservation_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnAbout" onMouseClicked="#About" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgAbout" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_info_app_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label fx:id="space" prefHeight="145.0" prefWidth="80.0" text=" " />
+            <JFXButton fx:id="btnLogout" onMouseClicked="#Logout" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgLogout" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../drawable/baseline_close_black_24dp.png" />
                      </image>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <HBox prefHeight="55.0" prefWidth="800.0" style="-fx-background-color: #017bd5;">
+               <children>
+                  <Label prefHeight="55.0" prefWidth="31.0" />
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/ActionBar-white.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="55.0" prefWidth="595.0" />
+                  <AnchorPane prefHeight="55.0" prefWidth="128.0">
+                     <children>
+                        <JFXButton buttonType="RAISED" layoutX="29.0" layoutY="10.0" prefHeight="36.0" prefWidth="70.0" style="-fx-background-color: #fff;" text="LOGIN" />
+                     </children>
+                  </AnchorPane>
+               </children></HBox>
+            <JFXTabPane stylesheets="@../styles/fullpackstyling.css">
+               <tabs>
+                  <Tab text="Vacation package">
+                    <content>
+                      <ScrollPane fx:id="ScrollPaneOverview" prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+                        <content>
+                            <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+                               
+                            </BorderPane>
+                        </content>
+                      </ScrollPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Vacation non-package">
+                    <content>
+                      <ScrollPane fx:id="ScrollPaneHowtouse" prefHeight="600.0" prefWidth="854.0" BorderPane.alignment="CENTER">
+                        <content>
+                            <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+                               
+                            </BorderPane>
+                        </content>
+                      </ScrollPane>
+                    </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

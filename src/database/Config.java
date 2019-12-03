@@ -17,7 +17,7 @@ public class Config {
 private static Connection mysqlconfig;
     public static Connection configDB()throws SQLException{
         try {
-            String url = "jdbc:mysql://localhost/tubespbo";
+            String url = "jdbc:mysql://localhost:3307/tubespbo";
             String user = "root";
             String pass = "";
             DriverManager.registerDriver(new com.mysql.jdbc.Driver());

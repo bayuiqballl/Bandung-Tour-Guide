@@ -7,7 +7,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1254.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AboutActivityController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1254.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ArticleActivityController">
    <left>
       <VBox prefHeight="703.0" prefWidth="51.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
          <children>
@@ -59,11 +59,11 @@
    <center>
       <ScrollPane prefHeight="1000.0" prefWidth="1254.0" BorderPane.alignment="CENTER">
          <content>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" >
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
                 <children>
                     <ImageView pickOnBounds="true" preserveRatio="true">
                        <image>
-                          <Image url="@../drawable/HeaderArticle.png" />
+                          <Image url="@../drawable/HeaderArticleDestinasi2.png" />
                        </image>
                     </ImageView>
                     <Label layoutX="49.0" layoutY="208.0" text="Label" textFill="WHITE">

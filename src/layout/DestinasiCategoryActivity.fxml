@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="rootCategory" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1254.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DestinasiCategoryActivityController">
+   <left>
+      <VBox fx:id="Drawer" prefHeight="703.0" prefWidth="51.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btnBack" onMouseClicked="#Back" prefHeight="80.0" prefWidth="80.0" text=" " textOverrun="CLIP">
+               <graphic>
+                  <ImageView fx:id="imgBack" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_arrow_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnHome" onMouseClicked="#Home" prefHeight="80.0" prefWidth="80.0" text=" " textOverrun="CLIP">
+               <graphic>
+                  <ImageView fx:id="imgHome" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_dashboard_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnCategory" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgCategory" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_category_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnAbout" onMouseClicked="#About" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgAbout" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_info_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label fx:id="space" prefHeight="303.0" prefWidth="80.0" text=" " />
+            <JFXButton fx:id="btnLogout" onMouseClicked="#Logout" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgLogout" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_close_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="AnchorPaneCategory" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btnWisataAlam" layoutX="185.0" layoutY="59.0" onMouseClicked="#WisataAlam" prefHeight="585.0" prefWidth="343.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgWisataAlam" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/CardView-DestinasiWisata-Alam.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnWisataSejarah" layoutX="596.0" layoutY="59.0" onMouseClicked="#WisataSejarah" prefHeight="585.0" prefWidth="343.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgWisataSejarah" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/CardView-DestinasiWisata-Sejarah.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

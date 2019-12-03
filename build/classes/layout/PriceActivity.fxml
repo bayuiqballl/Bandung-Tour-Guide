@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="rootVR" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1254.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PriceActivityController">
+   <left>
+      <VBox fx:id="drawer" prefHeight="703.0" prefWidth="51.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="icon" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/Icon.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnHome" onMouseClicked="#Home" prefHeight="80.0" prefWidth="80.0" text=" " textOverrun="CLIP">
+               <graphic>
+                  <ImageView fx:id="imgHome" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_dashboard_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnCategory" onMouseClicked="#Category" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgCategory" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_category_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnprice" onMouseClicked="#Price" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgprice" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_price_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnreservation" onMouseClicked="#Order" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgreservation" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_reservation_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnAbout" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgAbout" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_info_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label fx:id="space" prefHeight="145.0" prefWidth="80.0" text=" " />
+            <JFXButton fx:id="btnLogout" onMouseClicked="#Logout" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgLogout" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_close_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <ScrollPane fx:id="CenterScrollPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <JFXTabPane fx:id="TabPanePackages" prefHeight="1000.0" prefWidth="1173.0" stylesheets="@../styles/fullpackstyling.css">
+                       <tabs>
+                          <Tab fx:id="TabEconomy" text="Economy">
+                            <content>
+                              <ScrollPane fx:id="economy" BorderPane.alignment="CENTER">
+                                <content>
+                                    <BorderPane fx:id="BorderEconomy" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+                                        <top>
+                                            <ImageView fx:id="headerEconomy" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                <image>
+                                                    <Image url="@../drawable/HeaderStatus-Economy.png" />
+                                                </image>
+                                            </ImageView>
+                                        </top>
+                                        <center>
+                                            <AnchorPane fx:id="AnchorEconomy" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                                <children>
+                                                   <RadioButton fx:id="RBEco1" layoutX="82.0" layoutY="44.0" mnemonicParsing="false" text="Economy I Package" />
+                                                   <ImageView fx:id="paketeco1" layoutX="284.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@../drawable/economy1.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                   <ImageView fx:id="hargaeco1" layoutX="284.0" layoutY="870.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@../drawable/economy2.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                   <RadioButton fx:id="RBEco2" layoutX="82.0" layoutY="821.0" mnemonicParsing="false" text="Economy II Package" />
+                                                   <ImageView fx:id="paketeco2" layoutX="169.0" layoutY="609.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@../drawable/harga-economy1.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                   <ImageView fx:id="hargaeco2" layoutX="167.0" layoutY="1317.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@../drawable/harga-economy2.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                </children>
+                                             </AnchorPane>
+                                        </center>
+                                    </BorderPane>
+                                </content>
+                              </ScrollPane>
+                            </content>
+                          </Tab>
+                          <Tab fx:id="TabPremEconomy" text="Premium Economy">
+                            <content>
+                              <ScrollPane fx:id="economyPrem" BorderPane.alignment="CENTER">
+                                <content>
+                                    <BorderPane fx:id="BorderEconomyPrem" prefHeight="1900.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+                                        <top>
+                                            <ImageView fx:id="headerEconomyPrem" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                <image>
+                                                    <Image url="@../drawable/HeaderStatus-PremiumEconomy.png" />
+                                                </image>
+                                            </ImageView>
+                                        </top>
+                                        <center>
+                                            <AnchorPane fx:id="AnchorEconomyPrem" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                                <children>
+                                                   <RadioButton fx:id="RBEcoPrem1" layoutX="82.0" layoutY="44.0" mnemonicParsing="false" text="Premium Economy I Package" />
+                                                   <ImageView fx:id="paketecoprem1" layoutX="284.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@../drawable/prem1.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                   <ImageView fx:id="hargaecoprem1" layoutX="284.0" layoutY="870.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@../drawable/prem2.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                   <RadioButton fx:id="RBEcoPrem2" layoutX="82.0" layoutY="821.0" mnemonicParsing="false" text="Premium Economy II Package" />
+                                                   <ImageView fx:id="paketecoprem2" layoutX="169.0" layoutY="609.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@../drawable/harga-prem1.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                   <ImageView fx:id="hargaecoprem2" layoutX="168.0" layoutY="1488.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@../drawable/harga-prem2.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                </children>
+                                             </AnchorPane>
+                                        </center>
+                                    </BorderPane>
+                                </content>
+                              </ScrollPane>
+                            </content>
+                          </Tab>
+                          <Tab fx:id="TabBusiness" text="Business">
+                            <content>
+                              <ScrollPane fx:id="business" BorderPane.alignment="CENTER">
+                                <content>
+                                    <BorderPane fx:id="BorderBusiness" prefHeight="1300.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+                                          <top>
+                                            <ImageView fx:id="headerBusiness" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                <image>
+                                                    <Image url="@../drawable/HeaderStatus-Business.png" />
+                                                </image>
+                                            </ImageView>
+                                        </top>
+                                        <center>
+                                            <AnchorPane fx:id="AnchorBusiness" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                                <children>
+                                                   <RadioButton fx:id="RBBusiness" layoutX="82.0" layoutY="44.0" mnemonicParsing="false" text="Business Package" />
+                                                   <ImageView fx:id="paketbusiness" layoutX="284.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@../drawable/business.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                   <ImageView fx:id="hargabusiness" layoutX="176.0" layoutY="825.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@../drawable/harga-business.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                </children>
+                                             </AnchorPane>
+                                        </center>
+                                    </BorderPane>
+                                </content>
+                              </ScrollPane>
+                            </content>
+                          </Tab>
+                          <Tab fx:id="TabFirstClass" text="First Class">
+                            <content>
+                              <ScrollPane fx:id="firstclass" BorderPane.alignment="CENTER">
+                                <content>
+                                    <BorderPane fx:id="BorderFirstClass" prefHeight="1300.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+                                          <top>
+                                            <ImageView fx:id="headerFirstClass" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                <image>
+                                                    <Image url="@../drawable/HeaderStatus-FirstClass.png" />
+                                                </image>
+                                            </ImageView>
+                                        </top>
+                                        <center>
+                                            <AnchorPane fx:id="AnchorFirstClass" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                                <children>
+                                                   <RadioButton fx:id="RBFirstClass" layoutX="82.0" layoutY="44.0" mnemonicParsing="false" text="First Class Package" />
+                                                   <ImageView fx:id="paketfirstclass" layoutX="284.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@../drawable/firstclass.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                   <ImageView fx:id="hargafirstclass" layoutX="168.0" layoutY="919.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@../drawable/harga-firstclass.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                </children>
+                                             </AnchorPane>
+                                        </center>
+                                    </BorderPane>
+                                </content>
+                              </ScrollPane>
+                            </content>
+                          </Tab>
+                       </tabs>
+                    </JFXTabPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

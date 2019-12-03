@@ -8,15 +8,19 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1254.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DestinasiLayoutController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1254.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HotelLayoutController">
    <left>
       <VBox prefHeight="703.0" prefWidth="51.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fx:id="icon" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../drawable/Icon.png" />
-               </image>
-            </ImageView>
+            <JFXButton fx:id="btnBack" onMouseClicked="#Back" prefHeight="80.0" prefWidth="80.0" text=" " textOverrun="CLIP">
+               <graphic>
+                  <ImageView fx:id="imgBack" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_arrow_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
             <JFXButton onMouseClicked="#Home" prefHeight="80.0" prefWidth="80.0" text=" " textOverrun="CLIP">
                <graphic>
                   <ImageView fx:id="imgHome" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
@@ -62,7 +66,7 @@
          <children>
             <ImageView fx:id="Header" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../drawable/Header-CategoryDestinasiWisata.png" />
+                  <Image url="@../drawable/Header-CategoryLokasiHotel.png" />
                </image>
             </ImageView>
             <AnchorPane fx:id="AnchorPane" layoutX="58.0" layoutY="212.0" prefHeight="448.0" prefWidth="1058.0">

@@ -6,15 +6,9 @@
 package controllers;
 
 import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXDrawer;
-import com.jfoenix.controls.JFXHamburger;
-import com.jfoenix.transitions.hamburger.HamburgerBackArrowBasicTransition;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -146,34 +140,59 @@ public class HomeActivityController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-//        initHome();
-//        initDrawer();
+        btnHomeHome.setDisable(true);
     }
     
+    //=====================================NAVIGATION DRAWER=====================================
+
+    //Perintah menuju Category
     public void Category(MouseEvent mouseEvent) throws IOException{
         Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/CategoryActivity.fxml")));
         Node node = (Node) mouseEvent.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(rootRegis));
-        
+        stage.setTitle("Category - Bandung Tour Guide");
         stage.centerOnScreen();  
     }
     
-    public void About(MouseEvent mouseEvent) throws IOException{
-        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/AboutActivity.fxml")));
+    //Perintah menuju Daftar Harga
+    public void Price(MouseEvent mouseEvent) throws IOException{
+        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/PriceActivity.fxml")));
         Node node = (Node) mouseEvent.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(rootRegis));
-        
+        stage.setTitle("Price - Bandung Tour Guide");
         stage.centerOnScreen();  
     }
     
+    //Perintah menuju Vacation Reservation
+    public void Order(MouseEvent mouseEvent) throws IOException{
+        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/VacationReservationsActivity.fxml")));
+        Node node = (Node) mouseEvent.getSource();
+        Stage stage = (Stage) node.getScene().getWindow();
+        stage.setScene(new Scene(rootRegis));
+        stage.setTitle("Order - Bandung Tour Guide");
+        stage.centerOnScreen();  
+    }
+    
+    //Perintah menuju About
+    public void About(MouseEvent mouseEvent) throws IOException{
+        FXMLLoader root = new FXMLLoader();
+        root.setLocation(getClass().getResource("/layout/WelcomePageActivitynonLogin.fxml"));
+        Scene scene = new Scene(root.load(),800,600);
+        Stage stage = new Stage();
+        stage.setTitle("Newbie Guide - Bandung Tour Guide");
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    //Perintah menuju Logout
     public void Logout(MouseEvent mouseEvent) throws IOException{
         Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/LoginActivity.fxml")));
         Node node = (Node) mouseEvent.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(rootRegis));
-        
+        stage.setTitle("Sign In - Bandung Tour Guide");
         stage.centerOnScreen(); 
     }
     

@@ -43,6 +43,7 @@
             </ImageView>
             <Button fx:id="btnSignIn" layoutX="180.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="34.0" prefWidth="129.0" style="-fx-background-color: #0075ca;" text="Sign In" textFill="WHITE" />
             <Button fx:id="btnRegister" layoutX="34.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#btnRegisterPressed" prefHeight="34.0" prefWidth="129.0" stylesheets="@../styles/fullpackstyling.css" text="Register" />
+            <Label fx:id="status" layoutX="76.0" layoutY="375.0" text="status" textAlignment="CENTER" />
          </children>
       </Pane>
       <Label fx:id="infoLogin" layoutX="529.0" layoutY="437.0" text="*Register if you don't have an account." />

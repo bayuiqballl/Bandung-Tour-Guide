@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootWP" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.WelcomePageController">
+   <children>
+      <VBox fx:id="VBoxWP" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <HBox fx:id="HBoxWP" prefHeight="55.0" prefWidth="800.0" style="-fx-background-color: #017bd5;">
+               <children>
+                  <Label fx:id="space" prefHeight="55.0" prefWidth="31.0" />
+                  <ImageView fx:id="ActionBarLogo" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/ActionBar-white.png" />
+                     </image>
+                  </ImageView>
+               </children></HBox>
+            <JFXTabPane fx:id="TabPaneWP" stylesheets="@../styles/fullpackstyling.css">
+               <tabs>
+                  <Tab fx:id="TabOverview" text="Overview">
+                    <content>
+                      <ScrollPane fx:id="ScrollPaneOverview" prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+                        <content>
+                            <BorderPane fx:id="BorderOverview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+                               <top>
+                                  <ImageView fx:id="headeroverview" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                     <image>
+                                        <Image url="@../drawable/Header-WelcomePage-Overview.png" />
+                                     </image>
+                                  </ImageView>
+                               </top>
+                            </BorderPane>
+                        </content>
+                      </ScrollPane>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="TabHowtouse" text="How to use">
+                    <content>
+                      <ScrollPane fx:id="ScrollPaneHowtouse" prefHeight="600.0" prefWidth="854.0" BorderPane.alignment="CENTER">
+                        <content>
+                            <BorderPane fx:id="BorderHowtouse" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+                               <top>
+                                  <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                     <image>
+                                        <Image url="@../drawable/Header-WelcomePage-Howtouse.png" />
+                                     </image>
+                                  </ImageView>
+                               </top>
+                            </BorderPane>
+                        </content>
+                      </ScrollPane>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="TabFAQ" text="FAQ">
+                    <content>
+                      <ScrollPane fx:id="ScrollPaneFAQ" prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+                        <content>
+                            <BorderPane fx:id="BorderFAQ" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+                               <top>
+                                  <ImageView fx:id="headeroverview" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                     <image>
+                                        <Image url="@../drawable/Header-WelcomePage-FAQ.png" />
+                                     </image>
+                                  </ImageView>
+                               </top>
+                            </BorderPane>
+                        </content>
+                      </ScrollPane>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="TabCredit" text="Credits">
+                    <content>
+                      <ScrollPane fx:id="ScrollPaneCredits" prefHeight="600.0" prefWidth="854.0" BorderPane.alignment="CENTER">
+                        <content>
+                            <AnchorPane fx:id="AnchorCredits" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+                                <children>
+                                    <ImageView fx:id="headercredit" layoutX="55.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../drawable/credit.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="btnig1" layoutX="135.0" layoutY="500.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../drawable/ico_IG.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="btngithub1" layoutX="209.0" layoutY="500.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../drawable/ico_git.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="btnlinkedin1" layoutX="278.0" layoutY="500.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../drawable/ico_in.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="btnlinkedin2" layoutX="615.0" layoutY="500.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../drawable/ico_in.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="btngithub2" layoutX="546.0" layoutY="500.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../drawable/ico_git.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="btnig2" layoutX="472.0" layoutY="500.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../drawable/ico_IG.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="headerbteam" fitHeight="52.0" fitWidth="111.0" layoutX="345.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../drawable/teamcredits.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                            </AnchorPane>
+                        </content>
+                      </ScrollPane>
+                    </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

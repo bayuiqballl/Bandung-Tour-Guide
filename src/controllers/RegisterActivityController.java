@@ -17,6 +17,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -86,9 +87,6 @@ public class RegisterActivityController implements Initializable {
     Statement stm;
     
     
-    
-    
-    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -97,15 +95,12 @@ public class RegisterActivityController implements Initializable {
         }else {
             System.out.println("Go");
         }
-    
-    
     }
 
     public RegisterActivityController() throws SQLException {
         conn = Config.configDB();
     
     }
-    
     
     private String Register(){
             String status = "sukses";
@@ -124,7 +119,6 @@ public class RegisterActivityController implements Initializable {
             pst.execute();
             JOptionPane.showMessageDialog(null, "Penyimpanan Data Berhasil");
             
-            
             }catch (SQLException ex){
                  System.err.println(ex.getMessage());
             }
@@ -132,5 +126,13 @@ public class RegisterActivityController implements Initializable {
         return status;
     }
     
-    
+    public void Back(MouseEvent mouseEvent) throws IOException{
+        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/LoginActivity.fxml")));
+        Node node = (Node) mouseEvent.getSource();
+        Stage stage = (Stage) node.getScene().getWindow();
+        stage.setScene(new Scene(rootRegis));
+        stage.setTitle("Sign In - Bandung Tour Guide");
+        stage.centerOnScreen(); 
+    }
 }
+

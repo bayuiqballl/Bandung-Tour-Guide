@@ -6,6 +6,7 @@
 package controllers;
 
 
+import com.jfoenix.controls.JFXSpinner;
 import java.io.IOException;
 import java.net.URL;
 
@@ -18,8 +19,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 
 import javafx.fxml.Initializable;
+import javafx.scene.Group;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
@@ -36,6 +39,24 @@ public class SplashActivityController implements Initializable {
     
     @FXML
     private ImageView imgSLabel;
+    
+    @FXML
+    private ImageView imgbottom;
+    
+    @FXML
+    private Label labeldesc1;
+    
+    @FXML
+    private Label labeldesc2;
+    
+    @FXML
+    private Group GroupSpinner;
+    
+    @FXML
+    private ImageView circle;
+    
+    @FXML
+    private JFXSpinner spinner;
     
     @FXML
     private AnchorPane rootSplash;
@@ -58,13 +79,13 @@ public class SplashActivityController implements Initializable {
                 public void run() {
                     Parent root = null;
                     try{
-                        root = FXMLLoader.load(getClass().getResource("/layout/LoginActivity.fxml"));
+                        root = FXMLLoader.load(getClass().getResource("/layout/WelcomePageActivity.fxml"));
                     } catch (IOException ex) {
                         Logger.getLogger(SplashActivityController.class.getName()).log(Level.SEVERE, null, ex);
                     }
                     Scene scene = new Scene(root);
                     Stage stage = new Stage();
-
+                    stage.setTitle("Sign In - Bandung Tour Guide");
                     stage.setScene(scene);
                     stage.show();
                     rootSplash.getScene().getWindow().hide();

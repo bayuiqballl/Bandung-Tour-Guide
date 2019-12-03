@@ -10,18 +10,34 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" fx:id="rootSplash" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SplashActivityController">
+<AnchorPane id="AnchorPane" fx:id="rootSplash" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SplashActivityController">
    <children>
-      <ImageView fx:id="imgSplash" fitHeight="300.0" fitWidth="548.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ImageView fx:id="imgSplash" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@../drawable/SplashScreen.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="imgSLabel" fitHeight="98.0" fitWidth="284.0" layoutX="108.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgSLabel" layoutX="213.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../drawable/imgSplashSLogo.png" />
          </image>
       </ImageView>
-      <JFXSpinner fx:id="spnSplash" layoutX="225.0" layoutY="193.0" />
+      <Label fx:id="labeldesc1" layoutX="21.0" layoutY="361.0" text="Bandung Tour Guide is based from NetBeans IDE, developed under Group 1 IF-42-12." textFill="WHITE" />
+      <Label fx:id="labeldesc2" layoutX="21.0" layoutY="380.0" text="Copyright © 2019 Group 1. All rights reserved." textFill="WHITE" />
+      <ImageView fx:id="imgbottom" layoutX="196.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../drawable/imgsplashbttm.png" />
+         </image>
+      </ImageView>
+      <Group fx:id="GroupSpinner" layoutY="-17.0">
+         <children>
+            <ImageView fx:id="circle" layoutX="223.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/spinnerellipse.png" />
+               </image>
+            </ImageView>
+            <JFXSpinner fx:id="spinner" layoutX="235.0" layoutY="48.0" prefHeight="31.0" prefWidth="28.0" styleClass="jfx-spinner" stylesheets="@../styles/fullpackstyling.css" />
+         </children>
+      </Group>
    </children>
 </AnchorPane>

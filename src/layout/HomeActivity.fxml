@@ -34,16 +34,34 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="btnAboutHome" onContextMenuRequested="#About" prefHeight="80.0" prefWidth="80.0" text=" ">
+            <JFXButton fx:id="btnprice" onMouseClicked="#Price" prefHeight="80.0" prefWidth="80.0" text=" ">
                <graphic>
-                  <ImageView fx:id="imgAboutHome" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imgprice" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../drawable/baseline_info_black_24dp.png" />
+                        <Image url="@../drawable/baseline_price_black_24dp.png" />
                      </image>
                   </ImageView>
                </graphic>
             </JFXButton>
-            <Label fx:id="spaceHome" prefHeight="303.0" prefWidth="80.0" text=" " />
+            <JFXButton fx:id="btnreservation" onMouseClicked="#Order" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgreservation" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_reservation_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnAboutHome" onMouseClicked="#About" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgAboutHome" fitHeight="53.0" fitWidth="56.0" onMouseClicked="#About" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_info_app_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label fx:id="spaceHome" prefHeight="145.0" prefWidth="80.0" text=" " />
             <JFXButton fx:id="btnLogoutHome" onMouseClicked="#Logout" prefHeight="80.0" prefWidth="80.0" text=" ">
                <graphic>
                   <ImageView fx:id="imgLogoutHome" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
@@ -61,12 +79,12 @@
         <content>
           <AnchorPane fx:id="AnchorPaneHome" prefHeight="1503.0" prefWidth="1054.0" style="-fx-background-color: #fff;">
 			<children>
-      <ImageView fx:id="imgStackHeader" layoutX="91.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgStackHeader" layoutX="46.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../drawable/StackHomeHeader.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="imgHomeHeader" layoutX="419.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgHomeHeader" fitHeight="483.0" fitWidth="773.0" layoutX="384.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../drawable/HomeHeader.png" />
          </image>
@@ -82,7 +100,7 @@
                               <Image url="@../drawable/HeaderFontHome1.png" />
                            </image>
                         </ImageView>
-                                    <Label fx:id="LabelRingkasan" layoutY="49.0" prefHeight="287.0" prefWidth="624.0" text="Bandung (/ ˈbɑːndʊŋ /) adalah ibu kota provinsi Jawa Barat di Indonesia. Berdasarkan sensus 2015, ini adalah kota terpadat keempat di Indonesia setelah Jakarta, Surabaya, dan Bekasi dengan lebih dari 2,5 juta penduduk. Bandung Raya adalah kota metropolitan terbesar kedua di negara ini dengan lebih dari 8,5 juta penduduk. [2] Terletak 768 meter (2.520 kaki) di atas permukaan laut, sekitar 140 kilometer (87 mil) tenggara Jakarta, Bandung memiliki suhu yang lebih sejuk sepanjang tahun daripada kebanyakan kota di Indonesia. Kota ini terletak di lembah sungai yang dikelilingi oleh gunung berapi yang menyediakan sistem pertahanan alami, yang merupakan alasan utama rencana pemerintah Hindia Belanda untuk memindahkan ibukota dari Batavia (Jakarta modern) ke Bandung." wrapText="true">
+                                    <Label fx:id="LabelRingkasan" layoutY="49.0" prefHeight="287.0" prefWidth="624.0" text="            Bandung (/ ˈbɑːndʊŋ /) adalah ibu kota provinsi Jawa Barat di Indonesia. Berdasarkan sensus 2015, ini adalah kota terpadat keempat di Indonesia setelah Jakarta, Surabaya, dan Bekasi dengan lebih dari 2,5 juta penduduk. Bandung Raya adalah kota metropolitan terbesar kedua di negara ini dengan lebih dari 8,5 juta penduduk. [2] Terletak 768 meter (2.520 kaki) di atas permukaan laut, sekitar 140 kilometer (87 mil) tenggara Jakarta, Bandung memiliki suhu yang lebih sejuk sepanjang tahun daripada kebanyakan kota di Indonesia. Kota ini terletak di lembah sungai yang dikelilingi oleh gunung berapi yang menyediakan sistem pertahanan alami, yang merupakan alasan utama rencana pemerintah Hindia Belanda untuk memindahkan ibukota dari Batavia (Jakarta modern) ke Bandung." textAlignment="JUSTIFY" wrapText="true">
                                        <font>
                                           <Font size="16.0" />
                                        </font>

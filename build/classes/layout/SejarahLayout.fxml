@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1254.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SejarahLayoutController">
+   <left>
+      <VBox prefHeight="703.0" prefWidth="51.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btnBack" onMouseClicked="#Back" prefHeight="80.0" prefWidth="80.0" text=" " textOverrun="CLIP">
+               <graphic>
+                  <ImageView fx:id="imgBack" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_arrow_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton onMouseClicked="#Home" prefHeight="80.0" prefWidth="80.0" text=" " textOverrun="CLIP">
+               <graphic>
+                  <ImageView fx:id="imgHome" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_dashboard_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnCategory" onMouseClicked="#Category" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgCategory" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_category_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnAbout" onMouseClicked="#About" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgAbout" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_info_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label fx:id="space" prefHeight="303.0" prefWidth="80.0" text=" " />
+            <JFXButton fx:id="btnLogout" onMouseClicked="#Logout" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgLogout" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_close_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="CenterAnchorPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="Header" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/Header-CategoryWisataSejarah.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="AnchorPane" layoutX="58.0" layoutY="212.0" prefHeight="448.0" prefWidth="1058.0">
+               <children>
+                  <ImageView fx:id="Cardview1" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/Cardview-Destinasi1.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="Cardview3" layoutX="727.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <image>
+                        <Image url="@../drawable/Cardview-Destinasi3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="Cardview2" layoutX="365.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <image>
+                        <Image url="@../drawable/Cardview-Destinasi2.png" />
+                     </image>
+                  </ImageView>
+                  <Pane fx:id="Pane1" layoutX="27.0" layoutY="240.0" prefHeight="161.0" prefWidth="280.0">
+                     <children>
+                        <Label fx:id="judul1" layoutX="73.0" layoutY="-2.0" text="Gedung Sate" textAlignment="CENTER">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="desc1" layoutX="21.0" layoutY="37.0" prefHeight="52.0" prefWidth="239.0" text="Gedung Sate dengan ciri khasnya berupa ornamen tusuk sate pada menara sentralnya..." textAlignment="CENTER" wrapText="true" />
+                        <Button fx:id="btn1" layoutX="97.0" layoutY="118.0" mnemonicParsing="false" onMouseClicked="#btnArticle1" prefHeight="43.0" prefWidth="87.0" text="Read More" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="Pane2" layoutX="390.0" layoutY="240.0" prefHeight="161.0" prefWidth="280.0">
+                     <children>
+                        <Label fx:id="judul2" layoutX="42.0" layoutY="-2.0" text="Tangkuban Perahu" textAlignment="CENTER">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="desc2" layoutX="21.0" layoutY="37.0" prefHeight="52.0" prefWidth="239.0" text="Salah satu gunung yang terletak di Provinsi Jawa Barat, Indonesia. Sekitar 20 km ke arah utara Kota Bandung..." textAlignment="CENTER" wrapText="true" />
+                        <Button fx:id="btn2" layoutX="97.0" layoutY="118.0" mnemonicParsing="false" onMouseClicked="#btnArticle2" prefHeight="43.0" prefWidth="87.0" text="Read More" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="Pane3" layoutX="752.0" layoutY="240.0" prefHeight="161.0" prefWidth="280.0">
+                     <children>
+                        <Label fx:id="judul" layoutX="80.0" layoutY="-2.0" text="Jalan Braga" textAlignment="CENTER">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="desc3" layoutX="21.0" layoutY="37.0" prefHeight="52.0" prefWidth="239.0" text="Sebuah jalan utama di kota Bandung, Indonesia. Nama jalan ini cukup dikenal sejak masa pemerintahan Hindia Belanda..." textAlignment="CENTER" wrapText="true" />
+                        <Button fx:id="btn3" layoutX="97.0" layoutY="118.0" mnemonicParsing="false" onMouseClicked="#btnArticle3" prefHeight="43.0" prefWidth="87.0" text="Read More" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

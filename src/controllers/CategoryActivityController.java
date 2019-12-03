@@ -35,10 +35,10 @@ public class CategoryActivityController implements Initializable {
      */
     
     @FXML
-    private ImageView imgLogoutCategory;
+    private ImageView imgLogout;
     
     @FXML
-    private JFXButton btnLogoutCategory;
+    private JFXButton btnLogout;
     
     @FXML
     private ImageView imgWisataKuliner;
@@ -47,10 +47,10 @@ public class CategoryActivityController implements Initializable {
     private JFXButton btnWisataKuliner;
     
     @FXML
-    private ImageView imgHomeCategory;
+    private ImageView imgHome;
     
     @FXML
-    private JFXButton btnHomeCategory;
+    private JFXButton btnHome;
     
     @FXML
     private ImageView imgWisataBudaya;
@@ -71,25 +71,25 @@ public class CategoryActivityController implements Initializable {
     private JFXButton btnWisataReligi;
     
     @FXML
-    private ImageView imgAboutCategory;
+    private ImageView imgAbout;
     
     @FXML
-    private JFXButton btnAboutCategory;
+    private JFXButton btnAbout;
     
     @FXML
-    private ImageView imgCategoryCategory;
+    private ImageView imgCategory;
     
     @FXML
-    private JFXButton btnCategoryCategory;
+    private JFXButton btnCategory;
     
     @FXML
-    private ImageView iconCategory;
+    private ImageView icon;
     
     @FXML
-    private VBox DrawerCategory;
+    private VBox Drawer;
     
     @FXML
-    private Label spaceCategory;
+    private Label space;
     
     @FXML
     private BorderPane rootCategory;
@@ -97,82 +97,113 @@ public class CategoryActivityController implements Initializable {
     @FXML
     private AnchorPane AnchorPaneCategory;
     
-    
-    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        btnCategory.setDisable(true);
     }    
     
+    //=====================================NAVIGATION DRAWER=====================================
+
+    //Perintah menuju Home
     public void Home(MouseEvent mouseEvent) throws IOException{
         Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/HomeActivity.fxml")));
         Node node = (Node) mouseEvent.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(rootRegis));
-        
+        stage.setTitle("Home - Bandung Tour Guide");
         stage.centerOnScreen();  
     }
     
-    public void About(MouseEvent mouseEvent) throws IOException{
-        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/AboutActivity.fxml")));
+    //Perintah menuju Daftar Harga
+    public void Price(MouseEvent mouseEvent) throws IOException{
+        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/PriceActivity.fxml")));
         Node node = (Node) mouseEvent.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(rootRegis));
-        
+        stage.setTitle("Price - Bandung Tour Guide");
         stage.centerOnScreen();  
     }
     
+    //Perintah menuju Vacation Reservation
+    public void Order(MouseEvent mouseEvent) throws IOException{
+        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/VacationReservationsActivity.fxml")));
+        Node node = (Node) mouseEvent.getSource();
+        Stage stage = (Stage) node.getScene().getWindow();
+        stage.setScene(new Scene(rootRegis));
+        stage.setTitle("Order - Bandung Tour Guide");
+        stage.centerOnScreen();  
+    }
+    
+    //Perintah menuju About
+    public void About(MouseEvent mouseEvent) throws IOException{
+        FXMLLoader root = new FXMLLoader();
+        root.setLocation(getClass().getResource("/layout/WelcomePageActivitynonLogin.fxml"));
+        Scene scene = new Scene(root.load(),800,600);
+        Stage stage = new Stage();
+        stage.setTitle("Newbie Guide - Bandung Tour Guide");
+        stage.setScene(scene);
+        stage.show(); 
+    }
+    
+    //Perintah menuju Logout
     public void Logout(MouseEvent mouseEvent) throws IOException{
         Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/LoginActivity.fxml")));
         Node node = (Node) mouseEvent.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(rootRegis));
-        
+        stage.setTitle("Sign In - Bandung Tour Guide");
         stage.centerOnScreen(); 
-    }
+    }    
     
+    //=====================================TOMBOL NAVIGASI CATEGORY=====================================
+    
+    //Perintah menuju Destinasi Wisata
     public void DestinasiWisataLayout(MouseEvent mouseEvent) throws IOException{
-        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/DestinasiLayout.fxml")));
+        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/DestinasiCategoryActivity.fxml")));
         Node node = (Node) mouseEvent.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(rootRegis));
-        
+        stage.setTitle("Destinasi Wisata - Bandung Tour Guide");
         stage.centerOnScreen(); 
     }
     
+    //Perintah menuju Wisata Religi
     public void WisataReligiLayout(MouseEvent mouseEvent) throws IOException{
         Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/ReligiLayout.fxml")));
         Node node = (Node) mouseEvent.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(rootRegis));
-        
+        stage.setTitle("Wisata Religi - Bandung Tour Guide");
         stage.centerOnScreen(); 
     }
     
+    //Perintah menuju Wisata Kuliner
     public void WisataKulinerLayout(MouseEvent mouseEvent) throws IOException{
         Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/KulinerLayout.fxml")));
         Node node = (Node) mouseEvent.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(rootRegis));
-        
+        stage.setTitle("Wisata Kuliner - Bandung Tour Guide");
         stage.centerOnScreen(); 
     }
     
+    //Perintah menuju Lokasi Hotel
     public void LokasiHotelLayout(MouseEvent mouseEvent) throws IOException{
         Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/HotelLayout.fxml")));
         Node node = (Node) mouseEvent.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(rootRegis));
-        
+        stage.setTitle("Lokasi Hotel - Bandung Tour Guide");
         stage.centerOnScreen(); 
     }
     
+    //Perintah menuju Wisata Budaya
     public void WisataBudayaLayout(MouseEvent mouseEvent) throws IOException{
         Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/BudayaLayout.fxml")));
         Node node = (Node) mouseEvent.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(rootRegis));
-        
+        stage.setTitle("Wisata Budaya - Bandung Tour Guide");
         stage.centerOnScreen(); 
     }
     
