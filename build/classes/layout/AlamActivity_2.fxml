@@ -59,14 +59,14 @@
    <center>
       <ScrollPane prefHeight="1000.0" prefWidth="1254.0" BorderPane.alignment="CENTER">
          <content>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" >
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
                 <children>
                     <ImageView pickOnBounds="true" preserveRatio="true">
                        <image>
-                          <Image url="@../drawable/HeaderArticle.png" />
+                          <Image url="@../drawable/HeaderArticleDestinasi-Alam2.png" />
                        </image>
                     </ImageView>
-                    <Label layoutX="49.0" layoutY="208.0" text="Label" textFill="WHITE">
+                    <Label layoutX="49.0" layoutY="208.0" text="Tebing Gunung Hawu" textFill="WHITE">
                        <font>
                           <Font size="70.0" />
                        </font>
@@ -86,7 +86,10 @@
                        <center>
                           <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                              <children>
-                                <Label layoutX="62.0" layoutY="44.0" prefHeight="471.0" prefWidth="722.0" text="Label" textAlignment="JUSTIFY" wrapText="true" />
+                                <Label layoutX="55.0" layoutY="14.0" prefHeight="328.0" prefWidth="722.0" text="              Padalarang memang surganya wisata alam Bandung, sekarang giliran Tebing Gunung Hawu yang menarik hati para petualang bernyali besar. Gunung Hawu atau ‘Tebing 125’ yang berada di sekitar kampung Pamucatan ini memiliki lengkungan alami yang banyak orang menyamakannya dengan lengkungan alam seperti Natural Bridge di Virginia dan Arches Nationall Monument di Utah.Hawu berasal dari Bahasa Sunda yang berarti tempat perapian atau  “kompor” untuk memasak. Bentuk Hawu ini dapat dilihat dari Desa Cidadap dengan penampakan lubang besar di tengah dan bolong pada bagian atas.Wisata alam Bandung ini memang  cocok buat para adrenalin junkie. Gunung Hawu menjadi tempat yang pas untuk berlatih secara fisik dan penggila tantangan untuk memanjat tebing maupun menelusuri goa vertikal sedalam puluhan meter. Tingkat kesulitan yang ada di tebing ini cukup menantang bagi pemula ataupun pemanjat tebing profesional. Mulai dari ukuran 15 meter, 16 meter, hingga 26 meter." textAlignment="JUSTIFY" wrapText="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Label>
                              </children>
                           </AnchorPane>
                        </center>

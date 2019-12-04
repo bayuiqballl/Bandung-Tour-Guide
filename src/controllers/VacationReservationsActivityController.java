@@ -5,6 +5,7 @@
  */
 package controllers;
 
+import Models.Pesanan;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTabPane;
 import database.Config;
@@ -44,6 +45,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.util.Callback;
+import javax.swing.JOptionPane;
 
 /**
  * FXML Controller class
@@ -175,6 +177,9 @@ public class VacationReservationsActivityController implements Initializable {
 
     @FXML
     private JFXButton btnprice;
+    
+    @FXML
+    private JFXButton btnconfirm;
 
     @FXML
     private AnchorPane FormPane;
@@ -216,8 +221,8 @@ public class VacationReservationsActivityController implements Initializable {
         
         //Mengisi Item Class
         CBClass.getItems().removeAll(CBClass.getItems());
-        CBClass.getItems().addAll("Economy", "Premium Economy", "Business", "First Class");
-        CBClass.getSelectionModel().select("Economy");
+        CBClass.getItems().addAll("Economy I","Economy II", "Premium Economy I","Premium Economy II", "Business", "First Class");
+        CBClass.getSelectionModel().select("Economy I");
         
         //Mengisi Item Kelamin
         CBKelamin.getItems().removeAll(CBClass.getItems());
@@ -310,7 +315,7 @@ public class VacationReservationsActivityController implements Initializable {
         try {
             ResultSet rs = connection.createStatement().executeQuery(SQL);
 
-            //SQL FOR SELECTING ALL OF CUSTOMER
+            //SQL untuk memilih seluruh pelanggan
             for (int i = 0; i < rs.getMetaData().getColumnCount(); i++) {
                 //Menggunakan non Property Table
                 final int j = i;
@@ -357,6 +362,25 @@ public class VacationReservationsActivityController implements Initializable {
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
         }
+    }
+    
+    public void btnDelete(MouseEvent event){
+        try{
+//            int id = 0;
+            String  firstname = txtNamaDepan.getText();
+            String sql ="delete from pesanan where firstname='"+firstname+"' ";
+            java.sql.Connection conn=(Connection)Config.configDB();
+            java.sql.PreparedStatement pst=conn.prepareStatement(sql);
+            pst.execute();
+        } catch(Exception ex){
+            System.err.println(ex.getMessage());;
+        }
+        fetRowList();
+    }
+    
+    
+    public void confirm(){
+        JOptionPane.showMessageDialog(null, "Berhasil Dipesan!");
     }
     
 //    private void insertNewAccount(){ //Untuk menambah Akun
@@ -446,8 +470,9 @@ public class VacationReservationsActivityController implements Initializable {
         root.setLocation(getClass().getResource("/layout/WelcomePageActivitynonLogin.fxml"));
         Scene scene = new Scene(root.load(),800,600);
         Stage stage = new Stage();
+        stage.setTitle("Newbie Guide - Bandung Tour Guide");
         stage.setScene(scene);
-        stage.show(); 
+        stage.show();
     }
     
     //Perintah menuju Daftar Harga
@@ -469,6 +494,8 @@ public class VacationReservationsActivityController implements Initializable {
         stage.setTitle("Order - Bandung Tour Guide");
         stage.centerOnScreen();  
     }
+    
+    
     
     //Perintah menuju Logout
     public void Logout(MouseEvent mouseEvent) throws IOException{

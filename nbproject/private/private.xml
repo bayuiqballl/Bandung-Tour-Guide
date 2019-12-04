@@ -3,12 +3,24 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Kuliah/PBO/Tubes/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/layout/HomeActivity.fxml</file>
-            <file>file:/D:/Kuliah/PBO/Tubes/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/controllers/Pstring.java</file>
-            <file>file:/D:/Kuliah/PBO/Tubes/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/database/DataAccessObject.java</file>
-            <file>file:/D:/Kuliah/PBO/Tubes/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/controllers/VacationReservationsActivityController.java</file>
-            <file>file:/D:/Kuliah/PBO/Tubes/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/main/BandungTourGuide.java</file>
-            <file>file:/D:/Kuliah/PBO/Tubes/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/controllers/HomeActivityController.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/controllers/PriceActivityController.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/controllers/CategoryActivityController.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/controllers/RegisterActivityController.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/controllers/SplashActivityController.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/Models/Pesanan.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/controllers/LoginActivityController.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/controllers/SejarahLayoutController.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/controllers/BudayaLayoutController.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/controllers/DestinasiActivityController.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/controllers/EntityActivityController.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/controllers/HomeActivityController.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/database/Config.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/controllers/ArticleActivityController.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/controllers/VacationReservationsActivityController.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/controllers/WelcomePageController.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/controllers/ReligiLayoutController.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/controllers/NavigationDrawerController.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/Bandung-Tour-Guide-master/Bandung-Tour-Guide-master/src/controllers/AlamLayoutController.java</file>
         </group>
     </open-files>
 </project-private>

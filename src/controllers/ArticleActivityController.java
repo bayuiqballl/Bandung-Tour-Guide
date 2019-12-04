@@ -103,4 +103,7 @@ public class ArticleActivityController implements Initializable {
         stage.setTitle("Sign In - Bandung Tour Guide");
         stage.centerOnScreen(); 
     }    
+    
+    
+    
 }

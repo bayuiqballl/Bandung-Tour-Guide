@@ -330,14 +330,15 @@ public class PriceActivityController implements Initializable {
     }
     
     //Perintah menuju About
-//    public void About(MouseEvent mouseEvent) throws IOException{
-//        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/AboutActivity.fxml")));
-//        Node node = (Node) mouseEvent.getSource();
-//        Stage stage = (Stage) node.getScene().getWindow();
-//        stage.setScene(new Scene(rootRegis));
-//        stage.setTitle("About - Bandung Tour Guide");
-//        stage.centerOnScreen();  
-//    }
+    public void About(MouseEvent mouseEvent) throws IOException{
+        FXMLLoader root = new FXMLLoader();
+        root.setLocation(getClass().getResource("/layout/WelcomePageActivitynonLogin.fxml"));
+        Scene scene = new Scene(root.load(),800,600);
+        Stage stage = new Stage();
+        stage.setTitle("Newbie Guide - Bandung Tour Guide");
+        stage.setScene(scene);
+        stage.show();
+    }
     
     //Perintah menuju Daftar Harga
     public void Price(MouseEvent mouseEvent) throws IOException{

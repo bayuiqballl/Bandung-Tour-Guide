@@ -73,7 +73,7 @@
                <children>
                   <ImageView fx:id="Cardview1" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../drawable/Cardview-Destinasi1.png" />
+                        <Image url="@../drawable/Cardview-Religi1.png" />
                      </image>
                      <effect>
                         <DropShadow />
@@ -84,7 +84,7 @@
                         <DropShadow />
                      </effect>
                      <image>
-                        <Image url="@../drawable/Cardview-Destinasi3.png" />
+                        <Image url="@../drawable/Cardview-Religi3.png" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="Cardview2" layoutX="365.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
@@ -92,7 +92,7 @@
                         <DropShadow />
                      </effect>
                      <image>
-                        <Image url="@../drawable/Cardview-Destinasi2.png" />
+                        <Image url="@../drawable/Cardview-Religi2.png" />
                      </image>
                   </ImageView>
                   <Pane fx:id="Pane1" layoutX="27.0" layoutY="240.0" prefHeight="161.0" prefWidth="280.0">

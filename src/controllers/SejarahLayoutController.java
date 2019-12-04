@@ -128,6 +128,18 @@ public class SejarahLayoutController implements Initializable {
     @FXML
     private Pane Pane3;
     
+    @FXML
+    private ImageView imgprice;
+    
+    @FXML
+    private ImageView imgreservation;
+    
+    @FXML
+    private JFXButton btnprice;
+    
+    @FXML
+    private JFXButton btnreservation;
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -165,14 +177,35 @@ public class SejarahLayoutController implements Initializable {
         stage.centerOnScreen();  
     }
     
-    //Perintah menuju About
-    public void About(MouseEvent mouseEvent) throws IOException{
-        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/AboutActivity.fxml")));
+    //Perintah menuju Daftar Harga
+    public void Price(MouseEvent mouseEvent) throws IOException{
+        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/PriceActivity.fxml")));
         Node node = (Node) mouseEvent.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(rootRegis));
-        stage.setTitle("About - Bandung Tour Guide");
+        stage.setTitle("Price - Bandung Tour Guide");
         stage.centerOnScreen();  
+    }
+    
+    //Perintah menuju Vacation Reservation
+    public void Order(MouseEvent mouseEvent) throws IOException{
+        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/VacationReservationsActivity.fxml")));
+        Node node = (Node) mouseEvent.getSource();
+        Stage stage = (Stage) node.getScene().getWindow();
+        stage.setScene(new Scene(rootRegis));
+        stage.setTitle("Order - Bandung Tour Guide");
+        stage.centerOnScreen();  
+    }
+    
+    //Perintah menuju About
+    public void About(MouseEvent mouseEvent) throws IOException{
+        FXMLLoader root = new FXMLLoader();
+        root.setLocation(getClass().getResource("/layout/WelcomePageActivitynonLogin.fxml"));
+        Scene scene = new Scene(root.load(),800,600);
+        Stage stage = new Stage();
+        stage.setTitle("Newbie Guide - Bandung Tour Guide");
+        stage.setScene(scene);
+        stage.show();
     }
     
     //Perintah menuju Logout
@@ -187,33 +220,33 @@ public class SejarahLayoutController implements Initializable {
     
     //=====================================TOMBOL NAVIGASI ARTIKEL=====================================
     
-    //Perintah menuju Artikel Destinasi Wisata ke-1 (Gedung Sate)
+    //Perintah menuju Artikel Destinasi Wisata - Sejarah ke-1 (Monumen Perjuangan)
     public void btnArticle1(MouseEvent mouseEvent) throws IOException{
-        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/DestinasiActivity_1.fxml")));
+        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/SejarahActivity_1.fxml")));
         Node node = (Node) mouseEvent.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(rootRegis));
-        stage.setTitle("Destinasi Wisata: Gedung Sate");
+        stage.setTitle("Destinasi Wisata : Monumen Perjuangan - Bandung Tour Guide");
         stage.centerOnScreen();
     }
     
-    //Perintah menuju Artikel Destinasi Wisata ke-2 (Tangkuban Perahu)
+    //Perintah menuju Artikel Destinasi Wisata - Sejarah ke-2 (Jalan Asia-Afrika)
     public void btnArticle2(MouseEvent mouseEvent) throws IOException{
-        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/DestinasiActivity_2.fxml")));
+        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/SejarahActivity_2.fxml")));
         Node node = (Node) mouseEvent.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(rootRegis));
-        stage.setTitle("Destinasi Wisata: Tangkuban Perahu");
+        stage.setTitle("Destinasi Wisata : Jalan Asia-Afrika - Bandung Tour Guide");
         stage.centerOnScreen();
     }
     
-    //Perintah menuju Artikel Destinasi Wisata ke-3 (Jalan Braga)
+    //Perintah menuju Artikel Destinasi Wisata - Sejarah ke-3 (Gedung Sate)
     public void btnArticle3(MouseEvent mouseEvent) throws IOException{
-        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/DestinasiActivity_3.fxml")));
+        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/SejarahActivity_3.fxml")));
         Node node = (Node) mouseEvent.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(rootRegis));
-        stage.setTitle("Destinasi Wisata: Jalan Braga");
+        stage.setTitle("Destinasi Wisata : Gedung Sate - Bandung Tour Guide");
         stage.centerOnScreen();
     }
     

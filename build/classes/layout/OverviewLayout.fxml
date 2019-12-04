@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,12 +8,37 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <AnchorPane prefHeight="714.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="65.0" layoutY="25.0" prefHeight="260.0" prefWidth="671.0" text="          Disini Penulis akan menjelaskan dan mendefinisikan Gagasannya dimana Pemanfaatan Teknologi Informasi untuk penggunaannya sangatlah berpengaruh besar bagi setiap orang yang memakainya, Aplikasi dari Gagasan Penulis disini memakai atau berbasis Java (JavaFX). Maka dari itu, Penulis membuat kajian tentang Sistem Sistem Pemandu Wisata, Seperti contoh kasus dimana Bagi Wisatawan yang baru mengenal wilayah Bandung dirasa sulit tuk mencari Informasi dan data mengenai suatu lokasi yang ingin disinggahi. Yang dirasa dapat membantu atau menjadi suatu solusinya adalah Seorang Pemandu Wisata, namun terkadang Seorang Pemandu Wisata belum tentu dapat memenuhi kebutuhan dari seorang Wisatawan." textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
    <top>
-      <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-         <image>
-            <Image url="@../drawable/Header-WelcomePage-Overview.png" />
-         </image>
-      </ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="headeroverview" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/Header-WelcomePage-Overview.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="48.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/HeaderFontHome1.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="101.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
    </top>
 </BorderPane>

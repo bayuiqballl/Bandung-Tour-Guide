@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,8 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1379.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
@@ -16,4 +16,35 @@
          </image>
       </ImageView>
    </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView layoutX="53.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/HeaderFontHome1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="42.0" layoutY="387.0" prefHeight="234.0" prefWidth="717.0" text="           Penjabaran lebih mendetil yakni, Aplikasi ini mempunyai sekitar 5 menu pada Navigasi Menu, Beberapa menunya Home, Category, Price, Pemesanan Paket Liburan. Sebelum itu terdapat opsi Masuk dan Registrasi aplikasi, Sebelum memasuki Main Menu diharap untuk masuk terlebih dahulu dengan cara memasukkan Username dan Password, jika dirasa tidak mempunyai akun maka diharap untuk melakukan registrasi ke Database yang mana data yang dituliskan akan disimpan kedalam Database dan mempunyai permission untuk masuk dalam aplikasi." textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="273.0" fitWidth="402.0" layoutX="200.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/Screenshot%20(148).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="273.0" fitWidth="402.0" layoutX="200.0" layoutY="621.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/Screenshot%20(147).png" />
+               </image>
+            </ImageView>
+            <Label layoutX="42.0" layoutY="873.0" prefHeight="234.0" prefWidth="717.0" text="           Jika sudah melakukan Sign-In Account maka Main menu akan muncul dan menampilkan 8 menu diatas. Untuk Menu Destinasi Wisata akan menampilkan Informasi mengenai beberapa contoh Destinasi atau lokasi Wisata yang ada di Bandung seperti hanya Deskripsi dan lain sebagainya, begitu juga dengan Kuliner dan Hotel namun untuk Kuliner hanya menampilkan beberapa contoh lokasi Kuliner dan untuk Hotel akan menampilkan beberapa contoh lokasi Hotel di Bandung.  Untuk menu Budaya, Event, Pemesanan Paket Liburan  dan Informasi mengenai Bandung masih dipertimbangkan datanya." textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
 </BorderPane>

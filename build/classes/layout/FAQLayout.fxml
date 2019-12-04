@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,13 +8,107 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="2384.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView layoutX="42.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/QA.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="101.0" layoutY="58.0" text="Bagaimana cara daftar akun?">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="101.0" layoutY="108.0" prefHeight="55.0" prefWidth="631.0" text="Sangat Mudah! Caranya hanya masukkan username dan password yang akan didaftarkan, lalu tekan tombol yang dilingkari ini." textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="176.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/Screenshot%20(149).png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="189.0" layoutY="695.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/Screenshot%20(147).png" />
+               </image>
+            </ImageView>
+            <Label layoutX="114.0" layoutY="608.0" prefHeight="55.0" prefWidth="631.0" text="Sangat Mudah! Cukup masukkan username dan Password yang sudah didaftarkan, jika belum? maka lakukan registrasi." textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="558.0" text="Bagaimana cara masuk kedalam aplikasi?">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="55.0" layoutY="551.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/QA.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="55.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/QA.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="114.0" layoutY="1054.0" text="Bagaimana cara memesan Paket Liburan?">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="1104.0" text="Tekan Tombol berikut, lalu anda akan dialihkan ke menu pembelian." textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="189.0" layoutY="1155.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/Screenshot%20(150).png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="55.0" layoutY="1481.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/QA.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="114.0" layoutY="1488.0" text="Bagaimana cara masuk kedalam aplikasi?">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="1538.0" prefHeight="55.0" prefWidth="631.0" text="Sangat Mudah! Cukup masukkan username dan Password yang sudah didaftarkan, jika belum? maka lakukan registrasi." textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="189.0" layoutY="1625.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/Screenshot%20(151).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
    <top>
-      <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-         <image>
-            <Image url="@../drawable/Header-WelcomePage-FAQ.png" />
-         </image>
-      </ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/Header-WelcomePage-FAQ.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="35.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../drawable/howcan.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
    </top>
 </BorderPane>

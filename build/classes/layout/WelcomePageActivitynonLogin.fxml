@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.image.*?>
 <?import com.jfoenix.controls.*?>
@@ -28,14 +29,39 @@
                     <content>
                       <ScrollPane fx:id="ScrollPaneOverview" prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
                         <content>
-                            <BorderPane fx:id="BorderOverview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-                               <top>
-                                  <ImageView fx:id="headeroverview" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-                                     <image>
-                                        <Image url="@../drawable/Header-WelcomePage-Overview.png" />
-                                     </image>
-                                  </ImageView>
-                               </top>
+                            <BorderPane fx:id="BorderOverview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+                               <center>
+                                    <AnchorPane prefHeight="714.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Label layoutX="65.0" layoutY="25.0" prefHeight="260.0" prefWidth="671.0" text="          Disini Penulis akan menjelaskan dan mendefinisikan Gagasannya dimana Pemanfaatan Teknologi Informasi untuk penggunaannya sangatlah berpengaruh besar bagi setiap orang yang memakainya, Aplikasi dari Gagasan Penulis disini memakai atau berbasis Java (JavaFX). Maka dari itu, Penulis membuat kajian tentang Sistem Sistem Pemandu Wisata, Seperti contoh kasus dimana Bagi Wisatawan yang baru mengenal wilayah Bandung dirasa sulit tuk mencari Informasi dan data mengenai suatu lokasi yang ingin disinggahi. Yang dirasa dapat membantu atau menjadi suatu solusinya adalah Seorang Pemandu Wisata, namun terkadang Seorang Pemandu Wisata belum tentu dapat memenuhi kebutuhan dari seorang Wisatawan." textAlignment="JUSTIFY" wrapText="true">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </center>
+                                 <top>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <ImageView fx:id="headeroverview" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../drawable/Header-WelcomePage-Overview.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView layoutX="48.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../drawable/HeaderFontHome1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView layoutX="101.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../drawable/Logo.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </top>
                             </BorderPane>
                         </content>
                       </ScrollPane>
@@ -45,14 +71,45 @@
                     <content>
                       <ScrollPane fx:id="ScrollPaneHowtouse" prefHeight="600.0" prefWidth="854.0" BorderPane.alignment="CENTER">
                         <content>
-                            <BorderPane fx:id="BorderHowtouse" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+                            <BorderPane fx:id="BorderHowtouse" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1379.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
                                <top>
-                                  <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-                                     <image>
-                                        <Image url="@../drawable/Header-WelcomePage-Howtouse.png" />
-                                     </image>
-                                  </ImageView>
-                               </top>
+                                    <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                       <image>
+                                          <Image url="@../drawable/Header-WelcomePage-Howtouse.png" />
+                                       </image>
+                                    </ImageView>
+                                 </top>
+                                 <center>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <ImageView layoutX="53.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../drawable/HeaderFontHome1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="42.0" layoutY="387.0" prefHeight="234.0" prefWidth="717.0" text="           Penjabaran lebih mendetil yakni, Aplikasi ini mempunyai sekitar 5 menu pada Navigasi Menu, Beberapa menunya Home, Category, Price, Pemesanan Paket Liburan. Sebelum itu terdapat opsi Masuk dan Registrasi aplikasi, Sebelum memasuki Main Menu diharap untuk masuk terlebih dahulu dengan cara memasukkan Username dan Password, jika dirasa tidak mempunyai akun maka diharap untuk melakukan registrasi ke Database yang mana data yang dituliskan akan disimpan kedalam Database dan mempunyai permission untuk masuk dalam aplikasi." textAlignment="JUSTIFY" wrapText="true">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="273.0" fitWidth="402.0" layoutX="200.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../drawable/Screenshot%20(148).png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="273.0" fitWidth="402.0" layoutX="200.0" layoutY="621.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../drawable/Screenshot%20(147).png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="42.0" layoutY="873.0" prefHeight="234.0" prefWidth="717.0" text="           Jika sudah melakukan Sign-In Account maka Main menu akan muncul dan menampilkan 8 menu diatas. Untuk Menu Destinasi Wisata akan menampilkan Informasi mengenai beberapa contoh Destinasi atau lokasi Wisata yang ada di Bandung seperti hanya Deskripsi dan lain sebagainya, begitu juga dengan Kuliner dan Hotel namun untuk Kuliner hanya menampilkan beberapa contoh lokasi Kuliner dan untuk Hotel akan menampilkan beberapa contoh lokasi Hotel di Bandung.  Untuk menu Budaya, Event, Pemesanan Paket Liburan  dan Informasi mengenai Bandung masih dipertimbangkan datanya." textAlignment="JUSTIFY" wrapText="true">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </center>
                             </BorderPane>
                         </content>
                       </ScrollPane>
@@ -62,14 +119,109 @@
                     <content>
                       <ScrollPane fx:id="ScrollPaneFAQ" prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
                         <content>
-                            <BorderPane fx:id="BorderFAQ" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-                               <top>
-                                  <ImageView fx:id="headeroverview" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-                                     <image>
-                                        <Image url="@../drawable/Header-WelcomePage-FAQ.png" />
-                                     </image>
-                                  </ImageView>
-                               </top>
+                            <BorderPane fx:id="BorderFAQ" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="2384.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+                               <center>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <ImageView layoutX="42.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../drawable/QA.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="101.0" layoutY="58.0" text="Bagaimana cara daftar akun?">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="101.0" layoutY="108.0" prefHeight="55.0" prefWidth="631.0" text="Sangat Mudah! Caranya hanya masukkan username dan password yang akan didaftarkan, lalu tekan tombol yang dilingkari ini." textAlignment="JUSTIFY" wrapText="true">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView layoutX="176.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../drawable/Screenshot%20(149).png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView layoutX="189.0" layoutY="695.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../drawable/Screenshot%20(147).png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="114.0" layoutY="608.0" prefHeight="55.0" prefWidth="631.0" text="Sangat Mudah! Cukup masukkan username dan Password yang sudah didaftarkan, jika belum? maka lakukan registrasi." textAlignment="JUSTIFY" wrapText="true">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="114.0" layoutY="558.0" text="Bagaimana cara masuk kedalam aplikasi?">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView layoutX="55.0" layoutY="551.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../drawable/QA.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView layoutX="55.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../drawable/QA.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="114.0" layoutY="1054.0" text="Bagaimana cara memesan Paket Liburan?">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="114.0" layoutY="1104.0" text="Tekan Tombol berikut, lalu anda akan dialihkan ke menu pembelian." textAlignment="JUSTIFY" wrapText="true">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView layoutX="189.0" layoutY="1155.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../drawable/Screenshot%20(150).png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView layoutX="55.0" layoutY="1481.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../drawable/QA.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="114.0" layoutY="1488.0" text="Bagaimana cara masuk kedalam aplikasi?">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="114.0" layoutY="1538.0" prefHeight="55.0" prefWidth="631.0" text="Sangat Mudah! Cukup masukkan username dan Password yang sudah didaftarkan, jika belum? maka lakukan registrasi." textAlignment="JUSTIFY" wrapText="true">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView layoutX="189.0" layoutY="1625.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../drawable/Screenshot%20(151).png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </center>
+                                 <top>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <ImageView pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../drawable/Header-WelcomePage-FAQ.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView layoutX="35.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../drawable/howcan.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </top>
                             </BorderPane>
                         </content>
                       </ScrollPane>

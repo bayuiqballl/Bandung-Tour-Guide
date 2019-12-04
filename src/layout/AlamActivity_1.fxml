@@ -63,7 +63,7 @@
                 <children>
                     <ImageView pickOnBounds="true" preserveRatio="true">
                        <image>
-                          <Image url="@../drawable/HeaderArticle.png" />
+                          <Image url="@../drawable/HeaderArticleDestinasi-Alam1.png" />
                        </image>
                     </ImageView>
                     <Label layoutX="49.0" layoutY="208.0" text="Sanghyang Heuleut Cipatat" textFill="WHITE">

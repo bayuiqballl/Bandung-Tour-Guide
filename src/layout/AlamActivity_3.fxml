@@ -59,14 +59,14 @@
    <center>
       <ScrollPane prefHeight="1000.0" prefWidth="1254.0" BorderPane.alignment="CENTER">
          <content>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" >
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
                 <children>
                     <ImageView pickOnBounds="true" preserveRatio="true">
                        <image>
-                          <Image url="@../drawable/HeaderArticle.png" />
+                          <Image url="@../drawable/HeaderArticleDestinasi-Alam3.png" />
                        </image>
                     </ImageView>
-                    <Label layoutX="49.0" layoutY="208.0" text="Label" textFill="WHITE">
+                    <Label layoutX="49.0" layoutY="208.0" text="Kawah Putih Ciwidey" textFill="WHITE">
                        <font>
                           <Font size="70.0" />
                        </font>
@@ -86,7 +86,10 @@
                        <center>
                           <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                              <children>
-                                <Label layoutX="62.0" layoutY="44.0" prefHeight="471.0" prefWidth="722.0" text="Label" textAlignment="JUSTIFY" wrapText="true" />
+                                <Label layoutX="55.0" layoutY="14.0" prefHeight="310.0" prefWidth="722.0" text="              Wisata alam Bandung yang satu ini sudah begitu populer di Bandung. Ibaratnya, belum sah jalan-jalan ke Bandung kalau tidak mampir di kawah ini. Kawah Putih yang berada di daerah Ciwidey ini terbentuk akibat letusan Gunung Patuha. Sesuai namanya, Kawah Putih Ciwidey Bandung memang dominan dengan warna putihnya. Tanah yang berada di kawasan danau berwarna putih karena telah tercampur dengan unsur-unsur belerang. Air danau nya pun, terkadang berwarna putih kehijauan, tergantung dari suhu atau pun cuaca. Di kawasan wisata Kawah Putih terdapat mushola, restaurant, dan tempat parkir yang luas. Setelah puas berfoto dan menikmati keindahan Kawah Putih, pengunjung biasanya menikmati makan siang di restoran. Untuk menuju lokasi Kawah Putih pun tidak sulit. Kawah paling populer di Jawa Barat ini berada 25 km dari tempat wisata Situ Patenggang." textAlignment="JUSTIFY" wrapText="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Label>
                              </children>
                           </AnchorPane>
                        </center>

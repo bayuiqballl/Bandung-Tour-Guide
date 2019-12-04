@@ -93,6 +93,18 @@ public class DestinasiCategoryActivityController implements Initializable {
     @FXML
     private AnchorPane AnchorPaneCategory;
     
+    @FXML
+    private ImageView imgprice;
+    
+    @FXML
+    private ImageView imgreservation;
+    
+    @FXML
+    private JFXButton btnprice;
+    
+    @FXML
+    private JFXButton btnreservation;
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -130,14 +142,35 @@ public class DestinasiCategoryActivityController implements Initializable {
         stage.centerOnScreen();  
     }
     
-    //Perintah menuju About
-    public void About(MouseEvent mouseEvent) throws IOException{
-        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/AboutActivity.fxml")));
+    //Perintah menuju Daftar Harga
+    public void Price(MouseEvent mouseEvent) throws IOException{
+        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/PriceActivity.fxml")));
         Node node = (Node) mouseEvent.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(rootRegis));
-        stage.setTitle("About - Bandung Tour Guide");
+        stage.setTitle("Price - Bandung Tour Guide");
         stage.centerOnScreen();  
+    }
+    
+    //Perintah menuju Vacation Reservation
+    public void Order(MouseEvent mouseEvent) throws IOException{
+        Parent rootRegis = FXMLLoader.load(getClass().getResource(("/layout/VacationReservationsActivity.fxml")));
+        Node node = (Node) mouseEvent.getSource();
+        Stage stage = (Stage) node.getScene().getWindow();
+        stage.setScene(new Scene(rootRegis));
+        stage.setTitle("Order - Bandung Tour Guide");
+        stage.centerOnScreen();  
+    }
+    
+    //Perintah menuju About
+    public void About(MouseEvent mouseEvent) throws IOException{
+        FXMLLoader root = new FXMLLoader();
+        root.setLocation(getClass().getResource("/layout/WelcomePageActivitynonLogin.fxml"));
+        Scene scene = new Scene(root.load(),800,600);
+        Stage stage = new Stage();
+        stage.setTitle("Newbie Guide - Bandung Tour Guide");
+        stage.setScene(scene);
+        stage.show();
     }
     
     //Perintah menuju Logout

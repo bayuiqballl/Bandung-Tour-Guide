@@ -38,16 +38,34 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="btnAbout" onMouseClicked="#About" prefHeight="80.0" prefWidth="80.0" text=" ">
+            <JFXButton fx:id="btnprice" onMouseClicked="#Price" prefHeight="80.0" prefWidth="80.0" text=" ">
                <graphic>
-                  <ImageView fx:id="imgAbout" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imgprice" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../drawable/baseline_info_black_24dp.png" />
+                        <Image url="@../drawable/baseline_price_black_24dp.png" />
                      </image>
                   </ImageView>
                </graphic>
             </JFXButton>
-            <Label fx:id="space" prefHeight="303.0" prefWidth="80.0" text=" " />
+            <JFXButton fx:id="btnreservation" onMouseClicked="#Order" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgreservation" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_reservation_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnAbout" onMouseClicked="#About" prefHeight="80.0" prefWidth="80.0" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgAbout" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../drawable/baseline_info_app_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label fx:id="space" prefHeight="145.0" prefWidth="80.0" text=" " />
             <JFXButton fx:id="btnLogout" onMouseClicked="#Logout" prefHeight="80.0" prefWidth="80.0" text=" ">
                <graphic>
                   <ImageView fx:id="imgLogout" fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
